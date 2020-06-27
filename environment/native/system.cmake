@@ -1,0 +1,11 @@
+include_guard(GLOBAL)
+
+if(${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Linux")
+    set(CMAKE_SYSTEM_NAME Linux)
+elseif(XCODE)
+    message(FATAL_ERROR "Currently MacOS platform is not supported.")
+else()
+    message(STATUS "Selecting Windows as default platform.")
+    set(CMAKE_SYSTEM_NAME Windows)
+endif()    
+unset(COMPILER_PREFIX)
