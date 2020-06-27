@@ -6,7 +6,7 @@ CMake build system currently generates Makefiles for building. Any IDE specific 
 
 ## How to build
 
-Navigate into build/ folder and run those commands to build for native(for same host) compiling.
+Navigate into out/ folder and run those commands to build for native(for same host) compiling.
 
 `cmake ../`
 

@@ -1,7 +1,9 @@
-#include "hello.h"
+#include <stdio.h>
+#include "gpio_if.h"
 
-int main(int argc, char **argv)
+int main(void)
 {
-    hello_printString();
-
+    gpio_init();
+    printf("End Of Main\n");
+    return 0;
 }
